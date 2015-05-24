@@ -1,4 +1,4 @@
-﻿/// <binding ProjectOpened='bower-update' />
+﻿/// <binding ProjectOpened='bower-watch' />
 
 module.exports = function (grunt) {
   grunt.initConfig({
@@ -37,7 +37,11 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask("bower-update", ["watch:packages"]);
+  grunt.loadNpmTasks("grunt-bower-task");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+
+  grunt.registerTask("bower-update", ["bower:install"]);
+  grunt.registerTask("bower-watch", ["watch:packages"]);
 
   //grunt.registerTask("compile-css", ["clean:css", "less:dist", "cssmin:dist"]);
   //grunt.registerTask("compile-js", ["clean:js", "uglify:min"]);
