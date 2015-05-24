@@ -1,1 +1,11 @@
 _site/
+bin/
+obj/
+Properties/
+.vs/
+node_modules/
+bower_components/
+
+*.csproj
+*.user
+*.sln
