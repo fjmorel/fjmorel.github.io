@@ -1,24 +1,24 @@
 ﻿<!doctype html>
-<html ng-app="fmorel.website" strict-di>
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fred Morel</title>
 
   <link rel="stylesheet" href="lib/angular-material/angular-material.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
-<body class="md-hue-2" md-content>
+<body>
   <md-toolbar class="md-hue-2">
     <h2 class="md-toolbar-tools">Fred Morel - Software Developer</h2>
   </md-toolbar>
-  <div md-content layout-padding>
+  <div layout-padding>
     <h3>Online Presence</h3>
     <div layout="row" layout-sm="column" layout-wrap>
       <md-card flex-gt-sm="50%" flex-gt-md="33%">
         <md-card-content>
-          <h3>Github</h3>
+          <h3 class="md-title">Github</h3>
           <p>My open source work and public projects</p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="end center">
@@ -27,7 +27,7 @@
       </md-card>
       <md-card flex-gt-sm="50%" flex-gt-md="33%">
         <md-card-content>
-          <h3>LinkedIn</h3>
+          <h3 class="md-title">LinkedIn</h3>
           <p>My history and projects</p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="end center">
@@ -36,7 +36,7 @@
       </md-card>
       <md-card flex-gt-sm="50%" flex-gt-md="33%">
         <md-card-content>
-          <h3>StackOverflow</h3>
+          <h3 class="md-title">StackOverflow</h3>
           <p>My efforts at helping others</p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="end center">
@@ -49,15 +49,43 @@
     <div layout="row" layout-sm="column" layout-wrap>
       <md-card flex-gt-sm="50%" flex-gt-md="33%">
         <md-card-content>
-          <h3>Cosmic Companion</h3>
-          <p>
-            Tools and reference guides for Cosmic Encounter, available as both a website and an Android app
-          </p>
+          <h3 class="md-title">Cosmic Companion</h3>
+          <p>Tools and reference guides for Cosmic Encounter, available as both a website and an Android app</p>
         </md-card-content>
         <div class="md-actions" layout="row" layout-align="end center">
           <a href="https://github.com/fmorel90/cosmic" class="md-primary" md-button>View Source</a>
           <a href="cosmic/" class="md-primary md-raised" md-button>Open</a>
         </div>
+      </md-card>
+    </div>
+    <h3>History</h3>
+    <div layout="row" layout-sm="column" layout-wrap>
+      <md-card flex-gt-sm="50%" flex-gt-md="33%">
+        <md-card-content>
+          <h3 class="md-title">Education</h3>
+          <h4>Bachelor of Science in Software Engineering</h4>
+          <p>With minors in Mathematics and Computer Science, from Southern Polytechnic State University</p>
+          <ul>
+            <li>User Centered Design</li>
+            <li>Software Project Management</li>
+            <li>Database Systems</li>
+            <li>Calculus I, II, III</li>
+            <li>Ordinary Differential Equations</li>
+          </ul>
+        </md-card-content>
+      </md-card>
+      <md-card flex-gt-sm="50%" flex-gt-md="33%">
+        <md-card-content>
+          <h3 class="md-title">Work</h3>
+          <h4>Building Systems Analyst <small>at General Services Administration</small></h4>
+          <ul>
+            <li>Created internal Regional Energy &amp; Water Dashboard to track performance measures and help calculate savings</li>
+            <li>Created Google Spreadsheet-based waste tracking system for performance measure</li>
+            <li>Created service to monitor InetSupervisor building automation systems to improve reliability and problem response times</li>
+            <li>Rebuilt Advanced Metering data collection service to replace legacy system with more efficient and reliable application</li>
+            <li>Built web front-end to display Advanced Metering data in the region</li>
+          </ul>
+        </md-card-content>
       </md-card>
     </div>
   </div>
@@ -70,6 +98,8 @@
     angular.module('fmorel.website', ['ngAria', 'ngMaterial']).config(['$mdThemingProvider', function (ThemeProvider) {
       ThemeProvider.theme('default').primaryPalette('blue').accentPalette('amber');
     }]);
+
+    angular.bootstrap(document, ['fmorel.website'], { strictDi: true });
   </script>
 </body>
 </html>
