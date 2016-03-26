@@ -1,105 +1,114 @@
 ﻿<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fred Morel</title>
-
-  <link rel="stylesheet" href="lib/angular-material/angular-material.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fred Morel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/angular-material.min.css" />
+	<style>
+		body,
+		md-content {
+			background-color: #eee !important;
+		}
+		
+		.md-title {
+			margin: 0 0 0.5em 0;
+		}
+	</style>
 </head>
 <body>
-  <md-toolbar class="md-hue-2">
-    <h2 class="md-toolbar-tools">Fred Morel - Software Developer</h2>
-  </md-toolbar>
-  <div layout-padding>
-    <h3>Online Presence</h3>
-    <div layout="row" layout-sm="column" layout-wrap>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">Github</h3>
-          <p>My open source work and public projects</p>
-        </md-card-content>
-        <div class="md-actions" layout="row" layout-align="end center">
-          <a href="https://github.com/fmorel90" class="md-primary" md-button>View</a>
-        </div>
-      </md-card>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">LinkedIn</h3>
-          <p>My history and projects</p>
-        </md-card-content>
-        <div class="md-actions" layout="row" layout-align="end center">
-          <a href="https://www.linkedin.com/in/fredericmorel2" class="md-primary" md-button>View</a>
-        </div>
-      </md-card>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">StackOverflow</h3>
-          <p>My efforts at helping others</p>
-        </md-card-content>
-        <div class="md-actions" layout="row" layout-align="end center">
-          <a href="http://stackoverflow.com/users/1417591/fred" class="md-primary" md-button>View</a>
-        </div>
-      </md-card>
-    </div>
+	<md-toolbar class="md-hue-2">
+		<h2 class="md-toolbar-tools">Fred Morel - Software Developer</h2>
+	</md-toolbar>
+	<div layout-padding>
+		<h3>Online Presence</h3>
+		<div layout="row" layout-sm="column" layout-wrap>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">Github</h3>
+					<p>My open source work and public projects</p>
+				</md-card-content>
+				<div class="md-actions" layout="row" layout-align="end center">
+					<a href="https://github.com/fmorel90" class="md-primary" md-button>View</a>
+				</div>
+			</md-card>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">LinkedIn</h3>
+					<p>My history and projects</p>
+				</md-card-content>
+				<div class="md-actions" layout="row" layout-align="end center">
+					<a href="https://www.linkedin.com/in/fredericmorel2" class="md-primary" md-button>View</a>
+				</div>
+			</md-card>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">StackOverflow</h3>
+					<p>My efforts at helping others</p>
+				</md-card-content>
+				<div class="md-actions" layout="row" layout-align="end center">
+					<a href="http://stackoverflow.com/users/1417591/fred" class="md-primary" md-button>View</a>
+				</div>
+			</md-card>
+		</div>
 
-    <h3>Projects</h3>
-    <div layout="row" layout-sm="column" layout-wrap>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">Cosmic Companion</h3>
-          <p>Tools and reference guides for Cosmic Encounter, available as both a website and an Android app</p>
-        </md-card-content>
-        <div class="md-actions" layout="row" layout-align="end center">
-          <a href="https://github.com/fmorel90/cosmic" class="md-primary" md-button>View Source</a>
-          <a href="cosmic/" class="md-primary md-raised" md-button>Open</a>
-        </div>
-      </md-card>
-    </div>
-    <h3>History</h3>
-    <div layout="row" layout-sm="column" layout-wrap>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">Education</h3>
-          <h4>Bachelor of Science in Software Engineering</h4>
-          <p>With minors in Mathematics and Computer Science, from Southern Polytechnic State University</p>
-          <ul>
-            <li>User Centered Design</li>
-            <li>Software Project Management</li>
-            <li>Database Systems</li>
-            <li>Calculus I, II, III</li>
-            <li>Ordinary Differential Equations</li>
-          </ul>
-        </md-card-content>
-      </md-card>
-      <md-card flex-gt-sm="50%" flex-gt-md="33%">
-        <md-card-content>
-          <h3 class="md-title">Work</h3>
-          <h4>Building Systems Analyst <small>at General Services Administration</small></h4>
-          <ul>
-            <li>Created internal Regional Energy &amp; Water Dashboard to track performance measures and help calculate savings</li>
-            <li>Created Google Spreadsheet-based waste tracking system for performance measure</li>
-            <li>Created service to monitor InetSupervisor building automation systems to improve reliability and problem response times</li>
-            <li>Rebuilt Advanced Metering data collection service to replace legacy system with more efficient and reliable application</li>
-            <li>Built web front-end to display Advanced Metering data in the region</li>
-          </ul>
-        </md-card-content>
-      </md-card>
-    </div>
-  </div>
+		<h3>Projects</h3>
+		<div layout="row" layout-sm="column" layout-wrap>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">Cosmic Companion</h3>
+					<p>Tools and reference guides for Cosmic Encounter, available as both a website and an Android app</p>
+				</md-card-content>
+				<div class="md-actions" layout="row" layout-align="end center">
+					<a href="https://github.com/fmorel90/cosmic" class="md-primary" md-button>View Source</a>
+					<a href="cosmic/" class="md-primary md-raised" md-button>Open</a>
+				</div>
+			</md-card>
+		</div>
+		<h3>History</h3>
+		<div layout="row" layout-sm="column" layout-wrap>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">Education</h3>
+					<h4>Bachelor of Science in Software Engineering</h4>
+					<p>With minors in Mathematics and Computer Science, from Southern Polytechnic State University</p>
+					<ul>
+						<li>User Centered Design</li>
+						<li>Software Project Management</li>
+						<li>Database Systems</li>
+						<li>Calculus I, II, III</li>
+						<li>Ordinary Differential Equations</li>
+					</ul>
+				</md-card-content>
+			</md-card>
+			<md-card flex-gt-sm="50%" flex-gt-md="33%">
+				<md-card-content>
+					<h3 class="md-title">Work</h3>
+					<h4>Building Systems Analyst <small>at General Services Administration</small></h4>
+					<ul>
+						<li>Created internal Regional Energy &amp; Water Dashboard to track performance measures and help calculate savings</li>
+						<li>Created Google Spreadsheet-based waste tracking system for performance measure</li>
+						<li>Created service to monitor InetSupervisor building automation systems to improve reliability and problem response times</li>
+						<li>Rebuilt Advanced Metering data collection service to replace legacy system with more efficient and reliable application</li>
+						<li>Built web front-end to display Advanced Metering data in the region</li>
+					</ul>
+				</md-card-content>
+			</md-card>
+		</div>
+	</div>
 
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular-aria/angular-aria.min.js"></script>
-  <script src="lib/angular-animate/angular-animate.min.js"></script>
-  <script src="lib/angular-material/angular-material.min.js"></script>
-  <script>
-    angular.module('fmorel.website', ['ngAria', 'ngMaterial']).config(['$mdThemingProvider', function (ThemeProvider) {
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+	<script>
+		angular.module('fmorel.website', ['ngAria', 'ngMaterial']).config(['$mdThemingProvider', '$compileProvider', function (ThemeProvider, $compileProvider) {
       ThemeProvider.theme('default').primaryPalette('blue').accentPalette('amber');
+			$compileProvider.debugInfoEnabled(true);
     }]);
 
     angular.bootstrap(document, ['fmorel.website'], { strictDi: true });
-  </script>
+	</script>
 </body>
 </html>
