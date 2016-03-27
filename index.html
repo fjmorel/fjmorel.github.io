@@ -130,7 +130,7 @@
 				</md-card-content>
 				<md-card-footer ng-if="::$ctrl.actions">
 					<div class="md-actions" layout="row" layout-align="end center">
-						<a ng-repeat="link in $ctrl.actions" ng-href="::link.url" ng-class="::link.class" md-button>{{::link.text}}</a>
+						<a ng-repeat="link in $ctrl.actions" href="{{::link.url}}" ng-class="::link.class" md-button>{{::link.text}}</a>
 					</div>
 				</md-card-footer>
 			</md-card>
