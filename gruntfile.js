@@ -1,8 +1,8 @@
 ﻿/// <binding ProjectOpened='concat' />
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   grunt.initConfig({
-    concat:{
+    concat: {
 			'libs': {
         files: {
           'css/angular-material.min.css': [
