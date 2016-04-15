@@ -38,8 +38,8 @@
 		<h2 class="md-toolbar-tools">Fred Morel - Software Developer</h2>
 	</md-toolbar>
 	<h3 layout-padding>Online Presence</h3>
-	<div layout="row" layout-xs="column" layout-wrap>
-		<md-card flex>
+	<div layout="row" layout-wrap>
+		<md-card flex flex-xs="100">
 			<md-card-content>
 				<h3 class="md-title">Github</h3>
 				<p>My open source work and public projects</p>
@@ -48,7 +48,7 @@
 				<a href="https://github.com/fmorel90" class="md-primary" md-button>View</a>
 			</div>
 		</md-card>
-		<md-card flex>
+		<md-card flex flex-xs="100">
 			<md-card-content>
 				<h3 class="md-title">LinkedIn</h3>
 				<p>My history and projects</p>
@@ -57,7 +57,7 @@
 				<a href="https://www.linkedin.com/in/fredericmorel2" class="md-primary" md-button>View</a>
 			</div>
 		</md-card>
-		<md-card flex>
+		<md-card flex flex-xs="100">
 			<md-card-content>
 				<h3 class="md-title">StackOverflow</h3>
 				<p>My efforts at helping others</p>
@@ -69,14 +69,14 @@
 	</div>
 
 	<h3 layout-padding>Projects</h3>
-	<div layout="row" layout-xs="column" layout-wrap>
+	<div layout="row" layout-wrap>
 		<project flex="33" flex-sm="50" flex-xs="100" ng-repeat="proj in Resume.projects" title="::proj.title" subheading="::proj.subheading"
 			description="::proj.description" techs="::proj.techs" actions="::proj.actions">
 		</project>
 	</div>
 	<h3 layout-padding>History</h3>
-	<div layout="row" layout-xs="column" layout-wrap>
-		<md-card flex flex-sm="100">
+	<div layout="row" layout-wrap>
+		<md-card flex flex-sm="100" flex-xs="100">
 			<md-card-content>
 				<h3 class="md-title">Education</h3>
 				<h4>Bachelor of Science in Software Engineering</h4>
@@ -90,7 +90,7 @@
 				</ul>
 			</md-card-content>
 		</md-card>
-		<md-card flex flex-sm="100">
+		<md-card flex flex-sm="100" flex-xs="100">
 			<md-card-content>
 				<h3 class="md-title">Work</h3>
 				<h4>Building Systems Analyst <small>at General Services Administration</small></h4>
