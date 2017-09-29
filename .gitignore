@@ -1,10 +1,2 @@
-_site/
-bin/
-obj/
-Properties/
-.vs/
+.vscode/
 node_modules/
-
-*.csproj
-*.user
-*.sln
