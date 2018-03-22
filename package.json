@@ -1,11 +1,11 @@
 {
-  "name": "fmorel90-website",
+  "name": "fjmorel-website",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "angular": "^1.6.6",
-    "angular-animate": "^1.6.6",
-    "angular-aria": "^1.6.6",
-    "angular-material": "^1.1.5"
+    "angular": "~1.6.9",
+    "angular-animate": "~1.6.9",
+    "angular-aria": "~1.6.9",
+    "angular-material": "~1.1.8"
   }
 }
