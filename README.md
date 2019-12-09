@@ -1,2 +1,2 @@
-http://www.fmorel.net
+Available at http://www.fmorel.net
 ==
