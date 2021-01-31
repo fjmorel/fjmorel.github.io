@@ -2,7 +2,7 @@
   <el-card shadow="always">
     <div slot="header" class="clearfix">
       <el-button
-        v-for="link in actions"
+        v-for="link in project.actions"
         :key="link.url"
         :href="link.url"
         type="primary"
@@ -11,57 +11,39 @@
       >
         {{ link.text }}
       </el-button>
-      <span class="ref-header">{{ title }}</span>
+      <span class="ref-header">{{ project.title }}</span>
     </div>
     <div>
       <h3>
-        <small>{{ subheading }}</small>
+        <small>{{ project.subheading }}</small>
       </h3>
-      <p class="project-description">{{ description }}</p>
+      <p class="project-description">{{ project.description }}</p>
       <p class="techs">
         <span class="category">Technical environment</span>:
-        <span class="tech-list">{{ techs }}</span>
+        <span class="tech-list">{{ project.techs }}</span>
       </p>
     </div>
   </el-card>
 </template>
 
 <script lang="ts">
-export default {
+import Vue, { PropOptions } from 'vue';
+import { Project } from '@/types/models';
+
+export default Vue.extend({
   name: 'Project',
   props: {
-    title: {
-      type: String,
-      default: '',
+    project: {
+      type: Object,
       required: true,
-    },
-    subheading: {
-      type: String,
-      default: '',
-      required: true,
-    },
-    description: {
-      type: String,
-      default: '',
-      required: true,
-    },
-    techs: {
-      type: String,
-      default: '',
-      required: true,
-    },
-    actions: {
-      type: Array,
-      default: () => [],
-      required: false,
-    },
+    } as PropOptions<Project>,
   },
   methods: {
     mainClick(url: string) {
       window.open(url, '_blank');
     },
   },
-};
+});
 </script>
 
 <style scoped>

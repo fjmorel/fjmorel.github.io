@@ -14,7 +14,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue';
+
+export default Vue.extend({
   name: 'Work',
   data() {
     return {
@@ -31,7 +33,7 @@ export default {
       ],
     };
   },
-};
+});
 </script>
 
 <style>

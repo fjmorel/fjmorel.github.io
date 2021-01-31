@@ -14,11 +14,7 @@
           :lg="7"
           :xl="4"
         >
-          <Reference
-            :link="item.link"
-            :name="item.name"
-            :description="item.description"
-          />
+          <Reference :site="item" />
         </el-col>
       </el-row>
       <SectionHeader title="Projects" />
@@ -31,13 +27,7 @@
           :lg="8"
           :xl="4"
         >
-          <Project
-            :title="item.title"
-            :subheading="item.subheading"
-            :description="item.description"
-            :techs="item.techs"
-            :actions="item.actions"
-          />
+          <Project :project="item" />
         </el-col>
       </el-row>
       <SectionHeader title="History" />

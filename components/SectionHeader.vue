@@ -7,16 +7,18 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue, { PropOptions } from 'vue';
+
+export default Vue.extend({
   name: 'SectionHeader',
   props: {
     title: {
       type: String,
       default: '',
       required: true,
-    },
+    } as PropOptions<string>,
   },
-};
+});
 </script>
 
 <style scoped>
