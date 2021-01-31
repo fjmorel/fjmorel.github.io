@@ -1,16 +1,16 @@
 <template>
-  <el-card shadow="always">
-    <div slot="header">
-      <span class="ref-header">Work</span>
-    </div>
-    <h3>
+  <v-card>
+    <v-card-title>Work</v-card-title>
+    <v-card-subtitle>
       Building Systems Analyst
       <small>at General Services Administration</small>
-    </h3>
-    <ul>
-      <li v-for="item in notes" :key="item">{{ item }}</li>
-    </ul>
-  </el-card>
+    </v-card-subtitle>
+    <v-card-text>
+      <ul>
+        <li v-for="item in notes" :key="item">{{ item }}</li>
+      </ul>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script lang="ts">
@@ -35,6 +35,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style>
-</style>

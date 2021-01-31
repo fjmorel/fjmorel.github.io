@@ -8,7 +8,7 @@ export const projects: Project[] = [
     techs: 'HTML, JavaScript, AngularJS, CSS, Java, Android, Android Studio, XML, JSON',
     actions: [
       { url: 'https://github.com/fjmorel/cosmic', text: 'View Source' },
-      { url: '/cosmic/', text: 'Open' },
+      { url: 'cosmic/', text: 'Open' },
     ],
   },
   {

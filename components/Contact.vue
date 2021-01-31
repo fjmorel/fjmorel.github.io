@@ -1,17 +1,9 @@
 <template>
-  <el-card shadow="always">
-    <div slot="header" class="clearfix">
-      <span class="ref-header">Contact Information</span>
-    </div>
-    <p>
+  <v-card>
+    <v-card-title>Contact Information </v-card-title>
+    <v-card-text>
       Email:
       <a href="mailto:webmaster@fmorel.net">webmaster@fmorel.net</a>
-    </p>
-  </el-card>
+    </v-card-text>
+  </v-card>
 </template>
-
-<script lang="ts">
-</script>
-
-<style>
-</style>

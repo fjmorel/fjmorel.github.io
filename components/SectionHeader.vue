@@ -1,9 +1,9 @@
 <template>
-  <el-row>
-    <el-col :xs="24">
-      <h3 class="section-header">{{ title }}</h3>
-    </el-col>
-  </el-row>
+  <v-row>
+    <v-col cols="12">
+      <h3>{{ title }}</h3>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts">
@@ -20,12 +20,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style scoped>
-.section-header {
-  color: black;
-  font-weight: bold;
-  padding: 20px 0;
-  font-size: 20px;
-}
-</style>

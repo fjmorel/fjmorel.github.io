@@ -1,11 +1,12 @@
 <template>
-  <el-card shadow="always">
-    <div slot="header" class="clearfix">
-      <el-button type="primary" @click="mainClick()">View</el-button>
-      <span class="ref-header">{{ site.name }}</span>
-    </div>
-    <p>{{ site.description }}</p>
-  </el-card>
+  <v-card>
+    <v-card-title>{{ site.name }}</v-card-title>
+    <v-card-subtitle>{{ site.description }}</v-card-subtitle>
+    <v-card-actions>
+      <v-spacer />
+      <v-btn color="primary" outlined @click="mainClick()">View</v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script lang="ts">
@@ -27,5 +28,3 @@ export default Vue.extend({
   },
 });
 </script>
-<style>
-</style>

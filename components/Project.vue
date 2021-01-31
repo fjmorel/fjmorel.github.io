@@ -1,29 +1,28 @@
 <template>
-  <el-card shadow="always">
-    <div slot="header" class="clearfix">
-      <el-button
-        v-for="link in project.actions"
-        :key="link.url"
-        :href="link.url"
-        type="primary"
-        plain
-        @click="mainClick(link.url)"
-      >
-        {{ link.text }}
-      </el-button>
-      <span class="ref-header">{{ project.title }}</span>
-    </div>
-    <div>
-      <h3>
-        <small>{{ project.subheading }}</small>
-      </h3>
+  <v-card>
+    <v-card-title>{{ project.title }}</v-card-title>
+    <v-card-subtitle>{{ project.subheading }}</v-card-subtitle>
+    <v-card-text>
       <p class="project-description">{{ project.description }}</p>
       <p class="techs">
         <span class="category">Technical environment</span>:
         <span class="tech-list">{{ project.techs }}</span>
       </p>
-    </div>
-  </el-card>
+    </v-card-text>
+    <v-card-actions>
+      <v-spacer />
+      <v-btn
+        v-for="link in project.actions"
+        :key="link.url"
+        :href="link.url"
+        color="primary"
+        outlined
+        @click="mainClick(link.url)"
+      >
+        {{ link.text }}
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script lang="ts">
@@ -57,9 +56,5 @@ export default Vue.extend({
 
 .tech-list {
   font-style: italic;
-}
-p {
-  line-height: 1.5em;
-  margin-top: 10px;
 }
 </style>

@@ -1,55 +1,55 @@
 <template>
-  <el-container>
-    <el-header class="header" height="60px">
-      <Header />
-    </el-header>
-    <el-main>
-      <SectionHeader title="Online Presence" />
-      <el-row>
-        <el-col
-          v-for="item in sites"
-          :key="item.name"
-          :xs="24"
-          :sm="10"
-          :lg="7"
-          :xl="4"
-        >
-          <Reference :site="item" />
-        </el-col>
-      </el-row>
-      <SectionHeader title="Projects" />
-      <el-row>
-        <el-col
-          v-for="item in projects"
-          :key="item.name"
-          :xs="24"
-          :sm="12"
-          :lg="8"
-          :xl="4"
-        >
-          <Project :project="item" />
-        </el-col>
-      </el-row>
-      <SectionHeader title="History" />
-      <el-row>
-        <el-col :xs="24" :sm="12" :xl="8">
-          <Education />
-        </el-col>
-        <el-col :xs="24" :sm="12" :xl="8">
-          <Work />
-        </el-col>
-      </el-row>
-      <SectionHeader title="Other" />
-      <el-row>
-        <el-col :xs="24" :sm="12" :xl="8">
-          <Downloads />
-        </el-col>
-        <el-col :xs="24" :sm="12" :xl="8">
-          <Contact />
-        </el-col>
-      </el-row>
-    </el-main>
-  </el-container>
+  <v-app>
+    <v-app-bar color="blue" app>Fred Morel - Software Developer</v-app-bar>
+    <v-main class="grey lighten-3">
+      <v-container fluid>
+        <SectionHeader title="Online Presence" />
+        <v-row>
+          <v-col
+            v-for="item in sites"
+            :key="item.name"
+            cols="12"
+            sm="6"
+            lg="4"
+            xl="2"
+          >
+            <Reference :site="item" />
+          </v-col>
+        </v-row>
+        <SectionHeader title="Projects" />
+        <v-row>
+          <v-col
+            v-for="item in projects"
+            :key="item.name"
+            cols="12"
+            sm="6"
+            lg="4"
+            xl="2"
+          >
+            <Project :project="item" />
+          </v-col>
+        </v-row>
+        <SectionHeader title="History" />
+        <v-row>
+          <v-col cols="12" sm="6" xl="4">
+            <Education />
+          </v-col>
+          <v-col cols="12" sm="6" xl="4">
+            <Work />
+          </v-col>
+        </v-row>
+        <SectionHeader title="Other" />
+        <v-row>
+          <v-col cols="12" sm="6" xl="4">
+            <Downloads />
+          </v-col>
+          <v-col cols="12" sm="6" xl="4">
+            <Contact />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts">
@@ -63,6 +63,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
