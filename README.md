@@ -24,9 +24,9 @@ Stats for previous Angular version of home page:
 - DOMContentLoaded: 187 m
 
 Stats for NuxtJS version of home page:
-- 13 requests
-- 1.41 MB / 363.77 KB transferred
-- Finish: 601 ms
-- DOMContentLoaded: 148 ms
+- 22 requests
+- 1.08 MB / 290 KB transferred
+- Finish: 1.01 s
+- DOMContentLoaded: 436 ms
 
 There's still work to be done to try & trim the Nuxt version further.

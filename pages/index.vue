@@ -9,9 +9,9 @@
             v-for="item in sites"
             :key="item.name"
             cols="12"
-            sm="6"
-            lg="4"
-            xl="2"
+            sm="5"
+            lg="3"
+            xl="3"
           >
             <Reference :site="item" />
           </v-col>
@@ -24,7 +24,7 @@
             cols="12"
             sm="6"
             lg="4"
-            xl="2"
+            xl="3"
           >
             <Project :project="item" />
           </v-col>
