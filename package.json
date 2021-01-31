@@ -1,11 +1,36 @@
 {
-  "name": "fjmorel-website",
+  "name": "home-nuxt",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.0",
+    "nuxt": "^2.14.12"
+  },
   "devDependencies": {
-    "angular": "~1.7.5",
-    "angular-animate": "~1.7.5",
-    "angular-aria": "~1.7.5",
-    "angular-material": "~1.1.10"
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1"
   }
 }

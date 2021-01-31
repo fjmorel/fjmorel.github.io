@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+.clearfix:after {
+  clear: both;
+}
+
+.el-header {
+  background-color: rgb(21, 101, 192);
+  padding: 20px;
+  color: white;
+}
+
+.el-card {
+  margin: 10px;
+}
+
+.el-button {
+  float: right;
+  margin-left: 4px;
+}
+.ref-header {
+  font-size: 20px;
+  line-height: 2em;
+}
